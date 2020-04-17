@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	<a class="navbar-brand" href="/">
+		GuiaTest
+	</a>
+
+	<ul class="navbar-nav mr-auto">
+
+
+			<li class="nav-titem">
+			<a class="nav-link" href="/admin/category"> Home </a>
+		</li>
+
+		<% categories.forEach(category => {%>
+
+			<li class="nav-titem">
+			<a class="nav-link" href="/category/<%= category.slug %>"> <%= cateogry.title %> </a>
+		</li>
+		<%})%>
+	
+	</ul>
+	
+</nav>		
